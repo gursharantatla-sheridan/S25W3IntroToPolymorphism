@@ -4,12 +4,25 @@
     {
         static void Main(string[] args)
         {
+            // method overloading
             Add(3, 4);
             Add("h", "w");
 
             int[] a = { 3, 4, 5 };
 
             Print(a);
+
+
+
+            // method overriding
+            BaseClass objBase;
+            objBase = new BaseClass();
+            objBase.Show();
+
+            objBase = new DerivedClass();
+            objBase.Show();
+
+            //DerivedClass objDerived = new BaseClass();
         }
 
         static void Print(int[] arr)
